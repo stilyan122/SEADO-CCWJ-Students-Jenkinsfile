@@ -6,7 +6,7 @@ pipeline {
                 bat 'cd Student-Registry-App' 
             }
         }
-        stage("NPM Install") {
+        stage("NPM Install"){
             steps {
                 bat 'npm install'
             }
