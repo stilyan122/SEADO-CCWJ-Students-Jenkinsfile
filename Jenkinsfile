@@ -6,9 +6,9 @@ pipeline {
                 bat 'cd Student-Registry-App && npm install'
             }
         }
-        stage("NPM Audit") {
+        stage("NPM run tests") {
             steps {
-                bat 'cd Student-Registry-App && npm audit'
+                bat 'cd Student-Registry-App && npm test'
             }
         }
     }
