@@ -1,16 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage("NPM Install"){
+        stage("NPM Install") {
             steps {
-                bat 'cd Student-Registry-App' 
-                bat 'npm install'
+                bat 'cd Student-Registry-App && npm install'
             }
         }
-        stage("NPM Audit"){
+        stage("NPM Audit") {
             steps {
-                bat 'cd Student-Registry-App' 
-                bat 'npm audit'
+                bat 'cd Student-Registry-App && npm audit'
             }
         }
     }
