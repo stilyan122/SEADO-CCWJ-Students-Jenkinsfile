@@ -4,6 +4,7 @@ pipeline {
         stage ("Go to correct folder"){
             steps{
                 bat 'cd Student-Registry-App' 
+                bat 'dir' 
             }
         }
         stage("NPM Install"){
