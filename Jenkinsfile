@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage("NPM Install") {
+        stage("NPM Install"){
             steps {
                 bat 'cd Student-Registry-App && npm install'
             }
